@@ -19,12 +19,13 @@ from django.urls import path
 from basic.views import sample
 from basic.views import sample1
 from basic.views import sampleInfo
-from basic.views import dynamicResponse
+from basic.views import dynamicResponse,database
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('greet/',sample),
     path('53r/',sample1),
     path('info/',sampleInfo),
-    path('dynamic/',dynamicResponse)
+    path('dynamic/',dynamicResponse),
+    path("databasecheck/",database)
 ]
